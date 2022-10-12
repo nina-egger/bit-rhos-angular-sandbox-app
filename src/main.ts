@@ -1,3 +1,5 @@
+import {OB_PROJECT_INFO} from '@oblique/oblique';
+import packageInfo from '../package.json';
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -8,5 +10,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic([
+{provide: OB_PROJECT_INFO, useValue: {name: packageInfo.name, version: packageInfo.version, title: packageInfo.title}}
+]).bootstrapModule(AppModule)
   .catch(err => console.error(err));

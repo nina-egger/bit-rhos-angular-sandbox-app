@@ -1,38 +1,66 @@
 {
+  "title": "Angular sandbox",
   "name": "bit-angular-sandbox",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "format": "npm run lint -- --fix"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.1.0",
+    "@angular/cdk": "^14.0.0",
     "@angular/common": "^14.1.0",
     "@angular/compiler": "^14.1.0",
     "@angular/core": "^14.1.0",
     "@angular/forms": "^14.1.0",
+    "@angular/material": "^14.0.0",
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "@ngx-translate/core": "^14.0.0",
+    "@oblique/oblique": "^9.0.0",
+    "@popperjs/core": "^2.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-builders/jest": "^14.0.0",
     "@angular-devkit/build-angular": "^14.1.1",
+    "@angular-eslint/builder": "14.1.2",
+    "@angular-eslint/eslint-plugin": "14.1.2",
+    "@angular-eslint/eslint-plugin-template": "14.1.2",
+    "@angular-eslint/schematics": "14.1.2",
+    "@angular-eslint/template-parser": "14.1.2",
     "@angular/cli": "~14.1.1",
     "@angular/compiler-cli": "^14.1.0",
-    "@types/jasmine": "~4.0.0",
-    "jasmine-core": "~4.2.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
+    "@angular/localize": "^14.1.3",
+    "@types/jest": "^28.0.0",
+    "@typescript-eslint/eslint-plugin": "5.37.0",
+    "@typescript-eslint/parser": "5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^4.0.0",
+    "jest": "^28.0.0",
+    "jest-sonar-reporter": "2.0.0",
+    "prettier": "^2.0.0",
     "typescript": "~4.7.2"
+  },
+  "jestSonar": {
+    "reportPath": "./coverage/sonarQube",
+    "reportFile": "sqr.xml",
+    "indent": 4,
+    "sonar56x": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run format"
+    }
   }
 }
