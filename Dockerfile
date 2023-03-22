@@ -1,5 +1,5 @@
 ## Deploy
-FROM repo.bit.admin.ch:8448/repository/rhos-tools/bit-ubi9-minimal:latest
+FROM bit-base-images-docker-hosted.nexus.bit.admin.ch/bit/ubi9-minimal:latest
 # FROM gcr.io/distroless/base-debian10
 
 WORKDIR /
