@@ -6,7 +6,7 @@ WORKDIR /
 
 USER nonroot:nonroot
 
-COPY /bit-angular-sandbox /bit-angular-sandbox
+COPY dist/bit-angular-sandbox /bit-angular-sandbox
 
 EXPOSE 8080
 
