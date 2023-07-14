@@ -5,7 +5,7 @@ FROM bit-base-images-docker-hosted.nexus.bit.admin.ch/bit/ubi9-minimal:latest
 
 WORKDIR /
 
-FROM nginx:latest
+FROM toolchain-docker.nexus.bit.admin.ch/bit/nginx-120:1-110
 
 COPY /dist/bit-angular-sandbox /usr/share/nginx/html
 
