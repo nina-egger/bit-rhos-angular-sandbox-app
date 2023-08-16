@@ -6,10 +6,6 @@ COPY /dist/bit-angular-sandbox /usr/share/nginx/html
 # Copy the nginx config
 COPY src/nginx/nginx.conf /etc/nginx/nginx.conf
 
-#RUN chmod -R 777 /var/log/nginx /usr/share/nginx/html \
-#     && chgrp -R 0 /etc/nginx \
-#     && chmod -R g+rwX /etc/nginx
-
 # Run as nginx user
 USER 101
 
