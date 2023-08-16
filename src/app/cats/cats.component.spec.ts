@@ -1,23 +1,23 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { CatsComponent } from './cats.component';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {CatsComponent} from './cats.component';
+import {HttpClientTestingModule} from '@angular/common/http/testing';
 
 describe('CatsComponent', () => {
-  let component: CatsComponent;
-  let fixture: ComponentFixture<CatsComponent>;
+	let component: CatsComponent;
+	let fixture: ComponentFixture<CatsComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ CatsComponent ]
-    })
-    .compileComponents();
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
+			imports: [HttpClientTestingModule],
+			declarations: [CatsComponent]
+		}).compileComponents();
 
-    fixture = TestBed.createComponent(CatsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+		fixture = TestBed.createComponent(CatsComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });
