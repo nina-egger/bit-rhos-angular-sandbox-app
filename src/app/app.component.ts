@@ -7,8 +7,5 @@ import {ObINavigationLink} from '@oblique/oblique';
 })
 export class AppComponent {
 	title = 'bit-angular-sandbox';
-	mainNavigation: ObINavigationLink[] = [
-		{url: 'home', label: 'Home'},
-		{url: 'cats', label: 'Cats'}
-	];
+	mainNavigation: ObINavigationLink[] = [{url: 'home', label: 'Home'}];
 }
