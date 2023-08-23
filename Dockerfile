@@ -1,4 +1,4 @@
-FROM toolchain-docker.nexus.bit.admin.ch/bit/nginx-120:latest
+FROM bit-base-images-docker-hosted.nexus.bit.admin.ch/bit/nginx-120:latest
 
 # Copy the files from build step
 COPY /dist/bit-angular-sandbox /usr/share/nginx/html
