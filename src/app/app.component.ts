@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {ObINavigationLink} from '@oblique/oblique';
+import packageJson from '../../package.json';
 
 @Component({
 	selector: 'app-root',
@@ -8,4 +9,5 @@ import {ObINavigationLink} from '@oblique/oblique';
 export class AppComponent {
 	title = 'bit-angular-sandbox';
 	mainNavigation: ObINavigationLink[] = [{url: 'home', label: 'Home'}];
+	public version: string = packageJson.version;
 }
