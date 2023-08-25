@@ -9,5 +9,5 @@ import packageJson from '../../package.json';
 export class AppComponent {
 	title = 'bit-angular-sandbox';
 	mainNavigation: ObINavigationLink[] = [{url: 'home', label: 'Home'}];
-	public version: string = packageJson.version;
+	public version: string = packageJson?.version;
 }
