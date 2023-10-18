@@ -1,5 +1,9 @@
 FROM bit-base-images-docker-hosted.nexus.bit.admin.ch/bit/nginx-120:latest
 
+# Removes the libraries that causes security issues
+RUN apt-get uninstall vim-minimal
+RUN apt-get uninstall vim-filesystem
+
 # Copy the files from build step
 COPY /dist/bit-angular-sandbox /usr/share/nginx/html
 
