@@ -1,6 +1,6 @@
 {
   "name": "bit-angular-sandbox",
-  "version": "0.0.45",
+  "version": "0.0.46",
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
