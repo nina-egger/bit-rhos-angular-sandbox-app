@@ -4,7 +4,7 @@ h1, h2, h3 {
 	text-align: center;
 }
 
-.mat-card,
+.mat-mdc-card,
 .card {
 	max-width: 300px;
 }
@@ -34,12 +34,12 @@ h1, h2, h3 {
 	justify-content: space-evenly;
 	margin-top: 2*variables.$ob-spacing-lg;
 
-	.mat-card,
+	.mat-mdc-card,
 	.card {
 		margin-bottom: variables.$ob-spacing-lg;
 	}
 
-	.mat-card-actions,
+	.mat-mdc-card-actions,
 	.card-actions {
 		display: flex;
 		justify-content: space-between;

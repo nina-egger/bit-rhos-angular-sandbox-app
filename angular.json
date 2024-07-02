@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "bit-angular-sandbox:build:production"
+              "buildTarget": "bit-angular-sandbox:build:production"
             },
             "development": {
-              "browserTarget": "bit-angular-sandbox:build:development"
+              "buildTarget": "bit-angular-sandbox:build:development"
             }
           },
           "defaultConfiguration": "development"

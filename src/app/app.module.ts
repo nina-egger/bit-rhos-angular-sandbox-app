@@ -12,8 +12,8 @@ import localeITCH from '@angular/common/locales/it-CH';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {TranslateModule} from '@ngx-translate/core';
 import {HomeComponent} from './home/home.component';
-import {MatLegacyButtonModule} from '@angular/material/legacy-button';
-import {MatLegacyCardModule} from '@angular/material/legacy-card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 
 registerLocaleData(localeDECH);
@@ -31,8 +31,8 @@ registerLocaleData(localeITCH);
 		ObIconModule.forRoot(),
 		HttpClientModule,
 		TranslateModule.forRoot(multiTranslateLoader()),
-		MatLegacyButtonModule,
-		MatLegacyCardModule,
+		MatButtonModule,
+		MatCardModule,
 		MatIconModule,
 		ObExternalLinkModule
 	],

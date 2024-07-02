@@ -17,11 +17,3 @@ Object.defineProperty(window, 'getComputedStyle', {
 (window as any).HTMLElement.prototype.scrollIntoView = function () {
 	// nothing to do, this is only to satisfy SonarQube until we can exclude this file from the analysis.
 };
-Object.defineProperty(document.body.style, 'transform', {
-	value: () => {
-		return {
-			enumerable: true,
-			configurable: true
-		};
-	}
-});
